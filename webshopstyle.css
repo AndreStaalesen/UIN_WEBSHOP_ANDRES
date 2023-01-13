@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
+:root {
+    --red: #DA291C;
+    --yellow: #FFD700;
+    --blue: #006db7;
+    --green: #00AF4D;
+    --white: #ffffff;
+    --black: #000000;
+    --maxwidth: 1200px;
+    --rootsize: 20px;
+}
+
+body {
+    background-color: var(--yellow);
+    background-image: url('images/mainbackground.png');
+    font-family: 'Rubik', sans-serif;
+    font-size:var(--rootsize);
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+div.container{
+    width: 100%;
+    max-width: var(--maxwidth);
+    margin: 0 auto;
+    background-color: var(--white);
+    overflow: hidden; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header a img {
+    max-width: 250px;
+    width: 100%;
+    height:auto;
+    object-fit: contain;
+}
+
+#cart{
+    position: relative;
+    width: 100%;
+    max-width: 50px;
+
+}
+#cart .label{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--red);
+    position: absolute;
+    top: -1.3rem;
+    left: -1.3rem;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+
