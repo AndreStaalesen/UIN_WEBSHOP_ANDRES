@@ -51,7 +51,7 @@ header a img {
 #cart .label{
     width: 2rem;
     height: 2rem;
-    border-radius: 50%;
+    border-radius: 55%;
     text-align: center;
     color: var(--white);
     background-color: var(--red);
@@ -60,5 +60,80 @@ header a img {
     left: -1.3rem;
     box-sizing: border-box;
     padding-top: 5px;
+}
+nav {
+    width: 100%;
+    background-color: var(--red);
+    display: flex;
+}
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: .5rem 1rem;
+    border-bottom: 5px solid var(--red);
+    display: inline-block;
+    text-transform: uppercase;
+    transition: ease-in-out .4s;
+}
+nav a:hover {
+    color: var(--yellow);
+    border-color: var(--yellow);
+}
+
+nav a.active {
+    background-color: var(--yellow);
+    border-color: var(--black);
+    color: var(--black);
+}
+
+nav a.active:hover {
+    color:var(--red);
+}
+main{
+display: flex;
+flex-wrap: wrap;
+padding: 0 1rem;
+justify-content: space-between;
+
+}
+main h2 {
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+article.product-card {
+    background-color: var(--black);
+    border-bottom: 1rem solid var(--green);
+    width: 31%;
+    overflow: hidden;
+    padding: 1rem;
+    box-sizing: border-box;
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+article.product-card > * {
+    display: block;
+    clear: both;
+}
+article.product-card img {
+    width: 100%;
+}
+article.product-card a {
+    color: var(--yellow);
+    padding: 0.5rem 0;
+    text-decoration: none;
+}
+article.product-card h3 {
+    margin: .2rem 0 0.5rem 0;
+    text-transform: uppercase;
+}
+article.product-card button {
+    color: var(--white);
+    background-color: var(--green);
+    font-family: 'Rubik' sans-serif;
+    font-size: 1rem;
+    border: none;
+    padding: .5rem 1rem;
 }
 
